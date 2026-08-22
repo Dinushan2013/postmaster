@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Poster Master</title>
 
     <meta
         name="description"
-        content="Poster Master - Upload, create and share amazing posters."
+        content="Poster Master - Upload, create and inspire."
     >
 
-    <link rel="icon" href="assets/poster-master-logo.png">
+    <link
+        rel="icon"
+        href="assets/poster-master-logo.png"
+    >
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
+    <!-- Font Awesome -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
 </head>
+
 
 <body>
 
-<!-- =========================
-     BACKGROUND EFFECT
-========================= -->
 
-<div class="background-glow glow-1"></div>
-<div class="background-glow glow-2"></div>
+<!-- ==========================================
+     BACKGROUND
+========================================== -->
+
+<div class="background-glow glow-one"></div>
+<div class="background-glow glow-two"></div>
 
 
-<!-- =========================
+
+<!-- ==========================================
      NAVBAR
-========================= -->
+========================================== -->
 
 <header class="navbar">
 
     <div class="nav-container">
 
-        <a href="#" class="brand">
+
+        <!-- BRAND -->
+
+        <a
+            href="#home"
+            class="brand"
+        >
 
             <img
                 src="assets/poster-master-logo.png"
@@ -55,63 +85,98 @@
                 class="brand-logo"
             >
 
-            <div class="brand-text">
+            <div class="brand-name">
+
                 <strong>POSTER</strong>
+
                 <span>MASTER</span>
+
             </div>
 
         </a>
 
 
+
+        <!-- DESKTOP NAVIGATION -->
+
         <nav class="desktop-nav">
 
-            <a href="#home" data-en="Home" data-ta="முகப்பு">
+            <a
+                href="#home"
+                data-en="Home"
+                data-ta="முகப்பு"
+            >
                 Home
             </a>
 
-            <a href="#upload" data-en="Upload" data-ta="பதிவேற்றம்">
+            <a
+                href="#upload"
+                data-en="Upload"
+                data-ta="பதிவேற்றம்"
+            >
                 Upload
             </a>
 
-            <a href="#posts" data-en="Posts" data-ta="பதிவுகள்">
+            <a
+                href="#posts"
+                data-en="Posts"
+                data-ta="பதிவுகள்"
+            >
                 Posts
             </a>
 
         </nav>
 
 
+
+        <!-- NAV ACTIONS -->
+
         <div class="nav-actions">
 
-            <!-- Language -->
+
+            <!-- LANGUAGE -->
 
             <button
-                class="language-btn"
-                id="languageBtn"
-                title="Change Language"
+                class="language-button"
+                id="languageButton"
+                type="button"
             >
+
                 <i class="fa-solid fa-language"></i>
-                <span id="languageText">தமிழ்</span>
+
+                <span id="languageText">
+                    தமிழ்
+                </span>
+
             </button>
 
 
-            <!-- Theme -->
+
+            <!-- THEME -->
 
             <button
-                class="icon-btn"
-                id="themeToggle"
-                title="Change Theme"
+                class="icon-button"
+                id="themeButton"
+                type="button"
+                title="Change theme"
             >
+
                 <i class="fa-solid fa-moon"></i>
+
             </button>
 
 
-            <!-- Mobile Menu -->
+
+            <!-- MOBILE MENU -->
 
             <button
-                class="icon-btn mobile-menu-btn"
-                id="mobileMenuBtn"
+                class="icon-button mobile-menu-button"
+                id="mobileMenuButton"
+                type="button"
             >
+
                 <i class="fa-solid fa-bars"></i>
+
             </button>
 
         </div>
@@ -119,19 +184,35 @@
     </div>
 
 
-    <!-- Mobile Navigation -->
 
-    <div class="mobile-nav" id="mobileNav">
+    <!-- MOBILE NAV -->
 
-        <a href="#home" data-en="Home" data-ta="முகப்பு">
+    <div
+        class="mobile-nav"
+        id="mobileNav"
+    >
+
+        <a
+            href="#home"
+            data-en="Home"
+            data-ta="முகப்பு"
+        >
             Home
         </a>
 
-        <a href="#upload" data-en="Upload" data-ta="பதிவேற்றம்">
+        <a
+            href="#upload"
+            data-en="Upload"
+            data-ta="பதிவேற்றம்"
+        >
             Upload
         </a>
 
-        <a href="#posts" data-en="Posts" data-ta="பதிவுகள்">
+        <a
+            href="#posts"
+            data-en="Posts"
+            data-ta="பதிவுகள்"
+        >
             Posts
         </a>
 
@@ -141,26 +222,38 @@
 
 
 
-<!-- =========================
+<!-- ==========================================
+     MAIN
+========================================== -->
+
+<main>
+
+
+<!-- ==========================================
      HERO
-========================= -->
+========================================== -->
 
-<main id="home">
-
-<section class="hero">
+<section
+    class="hero"
+    id="home"
+>
 
     <div class="hero-content">
 
+
         <div class="hero-badge">
+
             <i class="fa-solid fa-wand-magic-sparkles"></i>
 
             <span
-                data-en="Create • Upload • Inspire"
+                data-en="CREATE • UPLOAD • INSPIRE"
                 data-ta="உருவாக்கு • பதிவேற்று • ஊக்கமளி"
             >
-                Create • Upload • Inspire
+                CREATE • UPLOAD • INSPIRE
             </span>
+
         </div>
+
 
 
         <h1>
@@ -174,9 +267,10 @@
 
             <br>
 
-            <span class="gradient-text"
+            <span
+                class="gradient-text"
                 data-en="Your Masterpiece."
-                data-ta="உங்கள் சிறப்புப் படைப்பு."
+                data-ta="உங்கள் சிறந்த படைப்பு."
             >
                 Your Masterpiece.
             </span>
@@ -184,17 +278,22 @@
         </h1>
 
 
+
         <p
-            data-en="Upload, organize and showcase your posters with Poster Master."
-            data-ta="Poster Master மூலம் உங்கள் போஸ்டர்களை பதிவேற்றி, ஒழுங்குபடுத்தி, காட்சிப்படுத்துங்கள்."
+            data-en="Upload, organize and showcase beautiful posters with Poster Master."
+            data-ta="Poster Master மூலம் அழகான போஸ்டர்களை பதிவேற்றி, ஒழுங்குபடுத்தி, காட்சிப்படுத்துங்கள்."
         >
-            Upload, organize and showcase your posters with Poster Master.
+            Upload, organize and showcase beautiful posters with Poster Master.
         </p>
+
 
 
         <div class="hero-buttons">
 
-            <a href="#upload" class="primary-btn">
+            <a
+                href="#upload"
+                class="primary-button"
+            >
 
                 <i class="fa-solid fa-cloud-arrow-up"></i>
 
@@ -208,7 +307,10 @@
             </a>
 
 
-            <a href="#posts" class="secondary-btn">
+            <a
+                href="#posts"
+                class="secondary-button"
+            >
 
                 <i class="fa-solid fa-images"></i>
 
@@ -226,23 +328,34 @@
     </div>
 
 
+
+    <!-- HERO LOGO -->
+
     <div class="hero-visual">
 
-        <div class="hero-card">
+        <div class="hero-logo-card">
 
             <img
                 src="assets/poster-master-logo.png"
                 alt="Poster Master"
             >
 
-            <div class="floating-card card-one">
+
+            <div class="floating-card floating-one">
+
                 <i class="fa-solid fa-image"></i>
+
                 <span>POSTER</span>
+
             </div>
 
-            <div class="floating-card card-two">
+
+            <div class="floating-card floating-two">
+
                 <i class="fa-solid fa-code"></i>
+
                 <span>CREATE</span>
+
             </div>
 
         </div>
@@ -253,20 +366,25 @@
 
 
 
-<!-- =========================
-     STATS
-========================= -->
+<!-- ==========================================
+     STATISTICS
+========================================== -->
 
-<section class="stats-section">
+<section class="stats">
 
     <div class="stat-card">
 
         <div class="stat-icon">
+
             <i class="fa-solid fa-images"></i>
+
         </div>
 
         <div>
-            <strong id="totalPosts">0</strong>
+
+            <strong id="totalPosts">
+                0
+            </strong>
 
             <span
                 data-en="Total Posts"
@@ -274,19 +392,26 @@
             >
                 Total Posts
             </span>
+
         </div>
 
     </div>
 
 
+
     <div class="stat-card">
 
         <div class="stat-icon">
+
             <i class="fa-solid fa-cloud-arrow-up"></i>
+
         </div>
 
         <div>
-            <strong>100%</strong>
+
+            <strong>
+                100%
+            </strong>
 
             <span
                 data-en="Easy Upload"
@@ -294,19 +419,26 @@
             >
                 Easy Upload
             </span>
+
         </div>
 
     </div>
 
 
+
     <div class="stat-card">
 
         <div class="stat-icon">
+
             <i class="fa-solid fa-language"></i>
+
         </div>
 
         <div>
-            <strong>2</strong>
+
+            <strong>
+                2
+            </strong>
 
             <span
                 data-en="Languages"
@@ -314,6 +446,7 @@
             >
                 Languages
             </span>
+
         </div>
 
     </div>
@@ -322,15 +455,20 @@
 
 
 
-<!-- =========================
+<!-- ==========================================
      UPLOAD SECTION
-========================= -->
+========================================== -->
 
-<section class="section upload-section" id="upload">
+<section
+    class="section"
+    id="upload"
+>
+
 
     <div class="section-heading">
 
         <span class="section-label">
+
             <i class="fa-solid fa-upload"></i>
 
             <span
@@ -343,15 +481,11 @@
         </span>
 
 
-        <h2>
-
-            <span
-                data-en="Upload Your Poster"
-                data-ta="உங்கள் போஸ்டரை பதிவேற்றுங்கள்"
-            >
-                Upload Your Poster
-            </span>
-
+        <h2
+            data-en="Upload Your Poster"
+            data-ta="உங்கள் போஸ்டரை பதிவேற்றுங்கள்"
+        >
+            Upload Your Poster
         </h2>
 
 
@@ -365,17 +499,20 @@
     </div>
 
 
+
     <div class="upload-layout">
 
 
-        <!-- FORM -->
+        <!-- ==================================
+             FORM
+        ================================== -->
 
         <div class="upload-card">
 
             <form id="postForm">
 
 
-                <!-- Image Upload -->
+                <!-- IMAGE -->
 
                 <div class="form-group">
 
@@ -395,7 +532,7 @@
                         <input
                             type="file"
                             id="posterImage"
-                            accept="image/*"
+                            accept="image/png,image/jpeg,image/jpg,image/webp"
                             hidden
                         >
 
@@ -428,11 +565,12 @@
 
 
 
-                <!-- Title -->
+                <!-- TITLE -->
 
                 <div class="form-group">
 
-                    <label for="postTitle"
+                    <label
+                        for="postTitle"
                         data-en="Post Title"
                         data-ta="பதிவு தலைப்பு"
                     >
@@ -443,21 +581,22 @@
                     <input
                         type="text"
                         id="postTitle"
+                        required
                         placeholder="Enter poster title..."
                         data-placeholder-en="Enter poster title..."
                         data-placeholder-ta="போஸ்டர் தலைப்பை உள்ளிடவும்..."
-                        required
                     >
 
                 </div>
 
 
 
-                <!-- Category -->
+                <!-- CATEGORY -->
 
                 <div class="form-group">
 
-                    <label for="postCategory"
+                    <label
+                        for="postCategory"
                         data-en="Category"
                         data-ta="வகை"
                     >
@@ -465,7 +604,9 @@
                     </label>
 
 
-                    <select id="postCategory">
+                    <select
+                        id="postCategory"
+                    >
 
                         <option
                             value="General"
@@ -475,6 +616,7 @@
                             General
                         </option>
 
+
                         <option
                             value="Education"
                             data-en="Education"
@@ -482,6 +624,7 @@
                         >
                             Education
                         </option>
+
 
                         <option
                             value="Technology"
@@ -491,6 +634,7 @@
                             Technology
                         </option>
 
+
                         <option
                             value="Event"
                             data-en="Event"
@@ -498,6 +642,7 @@
                         >
                             Event
                         </option>
+
 
                         <option
                             value="Creative"
@@ -513,11 +658,12 @@
 
 
 
-                <!-- Description -->
+                <!-- DESCRIPTION -->
 
                 <div class="form-group">
 
-                    <label for="postDescription"
+                    <label
+                        for="postDescription"
                         data-en="Description"
                         data-ta="விளக்கம்"
                     >
@@ -537,11 +683,11 @@
 
 
 
-                <!-- Submit -->
+                <!-- PUBLISH -->
 
                 <button
                     type="submit"
-                    class="publish-btn"
+                    class="publish-button"
                 >
 
                     <i class="fa-solid fa-paper-plane"></i>
@@ -561,7 +707,9 @@
 
 
 
-        <!-- LIVE PREVIEW -->
+        <!-- ==================================
+             LIVE PREVIEW
+        ================================== -->
 
         <div class="preview-card">
 
@@ -574,9 +722,11 @@
                     LIVE PREVIEW
                 </span>
 
+
                 <i class="fa-solid fa-eye"></i>
 
             </div>
+
 
 
             <div class="poster-preview">
@@ -599,12 +749,14 @@
 
 
                 <img
+                    src=""
+                    alt="Poster Preview"
                     id="previewImage"
                     class="preview-image"
-                    alt="Poster Preview"
                 >
 
             </div>
+
 
 
             <div class="preview-info">
@@ -613,9 +765,11 @@
                     General
                 </span>
 
+
                 <h3 id="previewTitle">
                     Poster Title
                 </h3>
+
 
                 <p id="previewDescription">
                     Your poster description will appear here.
@@ -631,13 +785,18 @@
 
 
 
-<!-- =========================
-     POSTS
-========================= -->
+<!-- ==========================================
+     POST GALLERY
+========================================== -->
 
-<section class="section posts-section" id="posts">
+<section
+    class="section"
+    id="posts"
+>
 
-    <div class="posts-top">
+
+    <div class="posts-header">
+
 
         <div class="section-heading">
 
@@ -655,21 +814,18 @@
             </span>
 
 
-            <h2>
-
-                <span
-                    data-en="Published Posts"
-                    data-ta="வெளியிடப்பட்ட பதிவுகள்"
-                >
-                    Published Posts
-                </span>
-
+            <h2
+                data-en="Published Posts"
+                data-ta="வெளியிடப்பட்ட பதிவுகள்"
+            >
+                Published Posts
             </h2>
 
         </div>
 
 
-        <!-- Search -->
+
+        <!-- SEARCH -->
 
         <div class="search-box">
 
@@ -688,12 +844,17 @@
     </div>
 
 
+
+    <!-- POSTS -->
+
     <div
         class="posts-grid"
         id="postsGrid"
-    >
-    </div>
+    ></div>
 
+
+
+    <!-- EMPTY -->
 
     <div
         class="no-posts"
@@ -702,12 +863,14 @@
 
         <i class="fa-regular fa-folder-open"></i>
 
+
         <h3
-            data-en="No Posts Yet"
-            data-ta="இன்னும் பதிவுகள் இல்லை"
+            data-en="No Posts Found"
+            data-ta="பதிவுகள் எதுவும் கிடைக்கவில்லை"
         >
-            No Posts Yet
+            No Posts Found
         </h3>
+
 
         <p
             data-en="Upload your first poster to get started."
@@ -724,9 +887,9 @@
 
 
 
-<!-- =========================
+<!-- ==========================================
      FOOTER
-========================= -->
+========================================== -->
 
 <footer>
 
@@ -734,18 +897,22 @@
 
         <img
             src="assets/poster-master-logo.png"
-            alt="Poster Master"
+            alt="Poster Master Logo"
         >
+
 
         <div>
 
-            <strong>POSTER MASTER</strong>
+            <strong>
+                POSTER MASTER
+            </strong>
+
 
             <p
-                data-en="Upload. Create. Inspire."
+                data-en="UPLOAD. CREATE. INSPIRE."
                 data-ta="பதிவேற்று. உருவாக்கு. ஊக்கமளி."
             >
-                Upload. Create. Inspire.
+                UPLOAD. CREATE. INSPIRE.
             </p>
 
         </div>
@@ -753,9 +920,11 @@
     </div>
 
 
+
     <div class="footer-bottom">
 
-        © <span id="year"></span> Poster Master.
+        © <span id="currentYear"></span>
+        Poster Master.
 
         <span
             data-en="All rights reserved."
@@ -770,9 +939,9 @@
 
 
 
-<!-- =========================
+<!-- ==========================================
      TOAST
-========================= -->
+========================================== -->
 
 <div
     class="toast"
@@ -782,14 +951,17 @@
     <i class="fa-solid fa-circle-check"></i>
 
     <span id="toastMessage">
-        Post published!
+        Success
     </span>
 
 </div>
 
 
 
+<!-- JAVASCRIPT -->
+
 <script src="js/app.js"></script>
 
 </body>
+
 </html>
